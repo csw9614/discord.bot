@@ -1,0 +1,12 @@
+discord.py
+random.py
+youtube_dl
+commands
+YoutubeDL
+bs4
+webdriver
+Options
+get
+FFmpegPCMAudio
+asyncio
+time
