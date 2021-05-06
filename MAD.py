@@ -3,7 +3,7 @@ import discord
 import random 
 import youtube_dl
 from youtube_dl import YoutubeDL
-import os
+
 
 intents = discord.Intents.default()
 app = discord.Client(intents=intents)
@@ -115,6 +115,4 @@ async def on_message(message):
         embed=discord.Embed(title="나와라 영준몬",color=0x00FFFF)
         embed.set_image( url="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTNfMTg1%2FMDAxNjE1NjE3ODI4MDg4.sg2vHK1GCTC7Byim-cHGkiBSoIDzuV-jwjU1F2BSOskg.pKdZhkPOAgOgHnSt-gJvKlWJ_yp7-9XZ6i3Ac8_KPlIg.JPEG.pasris2355%2F1.jpg&type=sc960_832" )
         await message.channel.send(embed=embed)  
-
-access_token=os.environ["BOT_TOEN"]
-app.run(access_token)    
+app.run(token)    
